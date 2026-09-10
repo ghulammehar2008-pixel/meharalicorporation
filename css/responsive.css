@@ -1,0 +1,188 @@
+/* ==========================================================================
+   Mehar Ali Corporation — Responsive rules (mobile-first adjustments)
+   Breakpoints: 1200 / 1024 / 900 / 768 / 560 / 380
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+  .footer__contact {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --header-h: 72px;
+  }
+  .card-grid,
+  .industry-grid,
+  .feature-grid,
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process::before {
+    display: none;
+  }
+  .trust__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile navigation ------------------------------------------------------ */
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+  .nav-close {
+    display: inline-flex;
+    position: absolute;
+    top: 1.1rem;
+    right: 1.25rem;
+  }
+  .nav {
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem 1.75rem 3rem;
+    background: var(--color-primary);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 420ms cubic-bezier(0.22, 0.61, 0.36, 1),
+      opacity 300ms ease, visibility 300ms ease;
+    overflow-y: auto;
+  }
+  .nav.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.35rem;
+    width: 100%;
+  }
+  .nav__link {
+    font-size: 1.35rem;
+    font-family: var(--font-display);
+    letter-spacing: 0.08em;
+  }
+  .nav .btn {
+    width: 100%;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+  }
+  .split__media {
+    order: -1;
+  }
+  .split__media img {
+    aspect-ratio: 16 / 11;
+  }
+  .split__media::after {
+    display: none;
+  }
+  .form__row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 92svh;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__brand,
+  .footer__contact {
+    grid-column: span 2;
+  }
+  .gallery__item--tall {
+    grid-row: span 1;
+    aspect-ratio: 4 / 3;
+  }
+  .lightbox__btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 1rem;
+  }
+  .card-grid,
+  .card-grid--two,
+  .industry-grid,
+  .feature-grid,
+  .gallery,
+  .process,
+  .trust__grid,
+  .stats,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer__brand,
+  .footer__contact {
+    grid-column: span 1;
+  }
+  .btn {
+    width: 100%;
+  }
+  .btn-group {
+    width: 100%;
+  }
+  .industry {
+    min-height: 280px;
+  }
+  .floaties {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+  .floatie {
+    width: 46px;
+    height: 46px;
+  }
+  .footer-bottom {
+    justify-content: flex-start;
+  }
+  .spec-table th,
+  .spec-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo img {
+    height: 44px;
+  }
+  .header-inner .btn {
+    display: none;
+  }
+}
+
+/* Large screens ---------------------------------------------------------- */
+@media (min-width: 1600px) {
+  :root {
+    --container-width: 1400px;
+  }
+}
