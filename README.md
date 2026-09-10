@@ -15,6 +15,8 @@ mehar-ali-corporation/
 ├── contact.html          Contact details, inquiry form, map
 ├── privacy.html          Privacy Policy
 ├── terms.html            Terms & Conditions
+├── sitemap.xml           XML sitemap — all 10 pages with image references
+├── robots.txt            Crawler rules + sitemap pointer
 ├── products/
 │   ├── foundry-coke.html
 │   └── carbon-dust.html
@@ -74,6 +76,8 @@ Keep photos compressed (WebP or optimised JPEG) and keep the `width`/`height` at
 2. Copy a `<article class="product-card">` block in `products.html`, update the image, text and `href`, and set `data-category`.
 3. Add a matching filter button: `<button class="btn btn--outline" type="button" data-filter="<category>">…</button>`.
 4. Add the product to the footer "Products" list on each page.
+5. Add the new page to `sitemap.xml` (copy an existing product `<url>` block and update
+   `loc`, `lastmod` and the image entry).
 
 Specification values marked `[ADD CONFIRMED VALUES]` on the product pages are deliberate placeholders —
 replace them only with figures you can support.
@@ -102,4 +106,5 @@ The map and "Get Directions" button use the supplied location:
 - Animations respect `prefers-reduced-motion`.
 - Every page has its own title, meta description, canonical link, Open Graph and Twitter tags;
   the home and contact pages carry LocalBusiness JSON-LD and the product pages carry Product JSON-LD.
-- Canonical links are relative. When the site gets its own domain, replace them with absolute URLs.
+- Canonical links are relative. When the site gets its own domain, replace them with absolute URLs — and update
+  the domain in `sitemap.xml` and `robots.txt` at the same time (both currently use `https://www.meharalicorporation.com`).
