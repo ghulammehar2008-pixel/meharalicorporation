@@ -58,7 +58,7 @@
     justify-content: center;
     gap: 2rem;
     padding: 5rem 1.75rem 3rem;
-    background: var(--color-primary);
+    background: var(--color-header-bg);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -173,7 +173,7 @@
 
 @media (max-width: 380px) {
   .logo img {
-    height: 44px;
+    height: 52px;
   }
   .header-inner .btn {
     display: none;
