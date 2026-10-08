@@ -1,0 +1,29 @@
+﻿TAG BALANCE: OK
+W3C error line 209: The heading “h4” (with computed level 4) follows the heading “h2” (with computed level 2), skipping 1 heading level.
+--- GIT STATUS ---
+ M README.md
+ M about.html
+ M contact.html
+ M index.html
+ M industries.html
+ M products.html
+ M products/carbon-dust.html
+ M products/foundry-coke.html
+ M products/pet-coke.html
+ M sitemap.xml
+?? assets/images/carbon_black.png
+?? carbon-black.html
+
+--- GIT DIFF STAT ---
+ README.md                  |   3 +-
+ about.html                 |   1 +
+ contact.html               |   1 +
+ index.html                 |  13 ++
+ industries.html            |   1 +
+ products.html              |  13 ++
+ products/carbon-dust.html  |   1 +
+ products/foundry-coke.html |   1 +
+ products/pet-coke.html     | 431 +++++++++++++++++++++++----------------------
+ sitemap.xml                | 265 +++++++++++++++-------------
+ 10 files changed, 387 insertions(+), 343 deletions(-)
+

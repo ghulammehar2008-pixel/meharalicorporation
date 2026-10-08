@@ -11,11 +11,12 @@ mehar-ali-corporation/
 │                         industries, why us, process, gallery, CTA, contact)
 ├── about.html            About Us
 ├── products.html         Product listing with category filter
+├── carbon-black.html     Carbon Black N330 & N660 product page
 ├── industries.html       Industries we serve
 ├── contact.html          Contact details, inquiry form, map
 ├── privacy.html          Privacy Policy
 ├── terms.html            Terms & Conditions
-├── sitemap.xml           XML sitemap — all 10 pages with image references
+├── sitemap.xml           XML sitemap — all 11 pages with image references
 ├── robots.txt            Crawler rules + sitemap pointer
 ├── products/
 │   ├── foundry-coke.html

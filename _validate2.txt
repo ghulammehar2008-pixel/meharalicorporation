@@ -1,0 +1,23 @@
+﻿--- PLAIN git diff --stat ---
+ README.md                  |  3 ++-
+ about.html                 |  1 +
+ contact.html               |  1 +
+ index.html                 | 13 +++++++++++++
+ industries.html            |  1 +
+ products.html              | 13 +++++++++++++
+ products/carbon-dust.html  |  1 +
+ products/foundry-coke.html |  1 +
+ products/pet-coke.html     |  1 +
+ sitemap.xml                | 11 +++++++++++
+ 10 files changed, 45 insertions(+), 1 deletion(-)
+
+--- EOL CHECK ---
+sitemap.xml: CRLF
+products\pet-coke.html: CRLF
+carbon-black.html: CRLF
+products.html: LF
+--- ls-files --eol ---
+i/lf    w/lf    attr/                 	products.html
+i/lf    w/crlf  attr/                 	products/pet-coke.html
+i/lf    w/crlf  attr/                 	sitemap.xml
+

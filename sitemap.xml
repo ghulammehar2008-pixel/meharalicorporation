@@ -72,6 +72,17 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://www.meharalicorporation.com/carbon-black.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.meharalicorporation.com/assets/images/carbon_black.png</image:loc>
+      <image:title>Carbon Black N330 &amp; N660</image:title>
+    </image:image>
+  </url>
+
   <!-- Industries -->
   <url>
     <loc>https://www.meharalicorporation.com/industries.html</loc>
